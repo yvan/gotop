@@ -71,4 +71,15 @@ func arrayMax(array []int32) int32{
     return tempMax
 }
 
+func arrMin(arr []int) int {
+    tempMin := 0
+    for i, v := range arr {
+        if i == 0 {
+            tempMin = v
+        }
+        tempMin = min(tempMin, v)
+    }
+    return tempMin
+}
+
 
